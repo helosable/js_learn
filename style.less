@@ -1,0 +1,51 @@
+@import url(./oblulenie.less);
+@radius_border: 15px;
+
+#main_frame{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+    margin: 50px;
+}
+
+.car_card{
+    display: inline-flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 2px red solid;
+    border-radius: @radius_border;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.car_img{
+    display: inline-block;
+    border-radius: @radius_border;
+    height: 400px;
+    width: 400px;
+}
+
+.car_text{
+    margin: 0 20px;
+}
+
+.top_text{
+    font-size: 30px;
+}
+
+.delete_button{
+    display: inline-block;
+    height: 50px;
+    width: 400px;
+    background-color: red;
+    border: none;
+    border-radius: @radius_border;
+}
+
+.btn_text{
+    font-size: 20px;
+    color: white;
+}

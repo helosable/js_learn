@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Guess_card from "./Components/Car_card";
 
+let data = await fetch("https://api.npoint.io/a2b70b4c0ded4fe6fe16");
+data = await data.json();
+
+console.log(data);
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return data.map((el) => (
+    <Guess_card
+      key={el.id}
+      text={el.desc}
+      mark={el.car_mark}
+      img={el.pic_link}
+    />
+  ));
 }
 
 export default App;

@@ -122,12 +122,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+
 #main_frame {
+  display: block;
+  margin: 10px;
+}
+
+.all_cars{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 50px;
+  width: 100%;
 }
+
 .car_card {
   display: inline-flex;
   flex-direction: column;
@@ -135,7 +144,7 @@ table {
   height: 600px;
   margin-right: 20px;
   margin-top: 20px;
-  border: 2px red solid;
+  border: 2px cyan solid;
   border-radius: 15px;
   align-items: center;
   justify-content: space-around;
@@ -149,18 +158,53 @@ table {
 .car_text {
   margin: 0 20px;
 }
+.car_btn{
+  width: 400px;
+  height: 30px;
+}
 .top_text {
   font-size: 30px;
 }
-.delete_button {
-  display: inline-block;
-  height: 50px;
-  width: 400px;
-  background-color: red;
-  border: none;
-  border-radius: 15px;
-}
+
 .btn_text {
   font-size: 20px;
   color: white;
+}
+.nav_wrap{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_menu{
+  display: flex;
+  flex-direction: row;
+}
+.nav_item{
+  margin-right: 30px;
+}
+.nav_text{
+  font-size: 30px;
+}
+
+  .basket{
+    cursor: pointer;
+  }
+
+.basket:hover, .basket_active{
+  cursor: pointer;
+  color: cyan;
+}
+
+.mini_goods{
+  position: absolute;
+  background: white;
+  border: 2px cyan solid;
+  right: 16%;
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+}
+.mini_text{
+  display: block;
+  margin-left: 10px;
 }

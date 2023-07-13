@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.css';
 
-function Guess_card(props) {
-        return (<div className="car_card">
+function Car_card(props) {
+
+    return (<div className="car_card">
         <p className="car_text top_text">
         {props.mark}
         </p>
@@ -10,8 +11,11 @@ function Guess_card(props) {
         <p className="car_text">
         {props.text}
         </p>
+    <button className='car_btn' onClick={() => {
+        props.func(props.mark)
+    }}></button>
     </div>)
     };
 
 
-export default Guess_card;
+export default Car_card;

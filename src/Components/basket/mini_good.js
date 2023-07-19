@@ -6,7 +6,7 @@ function Mini_good(props) {
     
     return ( 
         <div className="mini_card">
-            <Car_for_arr arr={arr}/>
+            <Car_for_arr arr={arr2}/>
         </div>
      );
 }

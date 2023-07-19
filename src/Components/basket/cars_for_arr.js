@@ -5,7 +5,8 @@ function Car_for_arr (props) {
     console.log(props.arr)
     return( 
         <div>
-       { props.arr.map((el) => React.createElement('p', {className: 'mini_text'}, el) )}
+       { props.arr.map((el) => <button><p className="mini_text">{el}</p></button> )}
+       
         </div>
             
     );

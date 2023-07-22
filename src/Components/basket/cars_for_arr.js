@@ -5,7 +5,7 @@ function Car_for_arr (props) {
     console.log(props.arr)
     return( 
         <div>
-       { props.arr.map((el) => <button><p className="mini_text">{el}</p></button> )}
+       { props.arr.map((el) => <p className="mini_text">{el}</p> )}
        
         </div>
             

@@ -7,7 +7,7 @@ import fs from "fs";
 const config = JSON.parse(fs.readFileSync("./config.json"));
 
 const db = mysql.createConnection({
-  host: config.localhost,
+  host: config.host,
   user: config.user,
   password: config.password,
   database: config.database,
